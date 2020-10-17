@@ -1,0 +1,29 @@
+import java.util.*;
+
+class Shocks
+
+{
+	public static void main(String[] args)
+	{
+		Scanner sc= new Scanner(System.in);
+		int[] colors=new int[101];
+		int pair=0;
+		
+		int j=sc.nextInt();
+		for(int i=0;i<j;i++)
+		{
+			int color=sc.nextInt();
+			colors[color]++;
+			if(colors[color]%2==0)
+			{
+				pair++;
+				colors[color]=0;
+				}
+		}
+		System.out.println(pair);
+		}
+   }
+		
+		
+		
+	
